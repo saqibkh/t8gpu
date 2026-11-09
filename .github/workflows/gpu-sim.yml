@@ -9,6 +9,8 @@ name: CUDA on simulated H100
 
 on:
   workflow_dispatch:
+  push:
+    branches: [ verify-gpu-sim ]
   pull_request:
     paths:
       - "t8gpu/**"
